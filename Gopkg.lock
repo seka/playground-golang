@@ -10,6 +10,14 @@
   revision = "3728e38f7e51da2c570af557aabefd1798b1c4bb"
 
 [[projects]]
+  digest = "1:f97285a3b0a496dcf8801072622230d513f69175665d94de60eb042d03387f6c"
+  name = "github.com/julienschmidt/httprouter"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "348b672cd90d8190f8240323e372ecd1e66b59dc"
+  version = "v1.2.0"
+
+[[projects]]
   digest = "1:cf31692c14422fa27c83a05292eb5cbe0fb2775972e8f1f8446a71549bd8980b"
   name = "github.com/pkg/errors"
   packages = ["."]
@@ -20,6 +28,9 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/cloudflare/tableflip"]
+  input-imports = [
+    "github.com/cloudflare/tableflip",
+    "github.com/julienschmidt/httprouter",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
